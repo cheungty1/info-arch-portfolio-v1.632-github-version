@@ -18,7 +18,7 @@ function TechNewsPage(props) {
       <HeroSection 
         title='Tech' 
         description='Catch up on all of the current news and developments in Tech today'
-        bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp"
+        bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.jpg"
       />
       {techArticles.length > 0 && <ArticlesList articles={techArticles} />}
     </Fragment>
