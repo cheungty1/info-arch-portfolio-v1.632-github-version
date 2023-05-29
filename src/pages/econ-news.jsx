@@ -18,7 +18,7 @@ function EconNewsPage(props) {
       <HeroSection 
         title='Econ' 
         description='Catch up on all of the current news and developments in the World Economy and Global Financial Markets today'
-        bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.jpg"
+        bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
       {econArticles.length > 0 && <ArticlesList articles={econArticles} />}
     </Fragment>

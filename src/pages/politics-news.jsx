@@ -18,7 +18,7 @@ function PoliticsFeed(props) {
       <HeroSection 
         title='Politics' 
         description='Catch up on all of the current news and developments in World GeoPolitics today'
-        bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.jpg"
+        bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
       {politicsArticles.length > 0 && <ArticlesList articles={politicsArticles} />}
     </Fragment>

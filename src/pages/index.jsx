@@ -17,7 +17,7 @@ function HomePage() {
         title='i' 
         description='Catch up on all world news from around the globe, at the touch of a button'
         
-        bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.jpg"
+        bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.webp"
       />
       {/*}
                 <Card border="dark" style={{ width: "18rem" }}>
