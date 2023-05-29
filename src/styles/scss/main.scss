@@ -1,0 +1,20 @@
+// GLOBAL LEVEL SCSS (compile to globals.css)
+// NOTE: All other SCSS compiles at component-level (see components folder)
+
+// vendor imports
+@use './vendors/bootstrap';
+// base imports
+@use './base/base';
+
+// component imports
+@use './components/articleDetail';
+@use './components/buttons';
+@use './components/form';
+
+// layout imports
+@use './layout/notFound';
+@use './layout/navbar';
+
+// page imports (if required)
+
+// vendor imports (if required)

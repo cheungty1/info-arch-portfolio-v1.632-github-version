@@ -1,0 +1,10 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.container {
+  margin: 3rem auto;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}

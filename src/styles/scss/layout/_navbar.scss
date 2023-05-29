@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+//Navbar section
+.navbar {
+  background: $primaryColor;
+  color: $complementaryColor;
+  
+  .navbar-brand, .nav-link {  
+    color: $complementaryColor;
+
+    &:hover {  
+      color: $brandColor;
+    }
+  }
+}
