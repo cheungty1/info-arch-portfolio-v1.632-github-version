@@ -60,9 +60,10 @@ module.exports = (phase) => {
   const env = {
     SERVER_NAME: (() => {
       if (isDev) return 'http://localhost:3000/'
-      if (isProd) return 'https://iWorld.vercel.app/'
+      if (isProd) return 'https://taiyc1-iworld.vercel.app/'
     })(),
     NEWS_API_KEY: process.env.NEWS_API_KEY,
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID
   }
 
   // Next.config returns an object
