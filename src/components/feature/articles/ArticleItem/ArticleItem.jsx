@@ -10,10 +10,11 @@ function ArticleItem(props) {
       <div className={styles.articleMain}>
         {props.urlToImage &&  <div className={styles.imageBox}>
            <Image 
+           className={styles.nextImage}
             src={props.urlToImage} 
             alt={props.title} 
-            width={650}
-            height={300}
+            fill={true}
+            sizes="(max-width: 768px) 100vw, 50vw"
           /> 
        </div>}
         <div className={styles.articleContent}>
