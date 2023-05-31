@@ -3,6 +3,9 @@ import Head from 'next/head';
 import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
 import ScrollToTop from "react-scroll-to-top";
+import { Carousel} from "react-bootstrap";
+import { Container } from 'react-bootstrap'
+//import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
 
 function PoliticsFeed(props) {
   const { politicsArticles } = props; 
@@ -21,6 +24,47 @@ function PoliticsFeed(props) {
         description='Stay up to date with emerging stories in World GeoPolitics today'
         bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
+      <Container>
+      <Carousel fade >
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={politicsArticles[0].urlToImage ? politicsArticles[0].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          //src={Img1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>{politicsArticles[0].title}</h3>
+          <p>{politicsArticles[0].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={politicsArticles[1].urlToImage ? politicsArticles[1].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>{politicsArticles[1].title}</h3>
+          <p>{politicsArticles[1].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={politicsArticles[2].urlToImage ? politicsArticles[2].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>{politicsArticles[2].title}</h3>
+          <p>{politicsArticles[2].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+        </Carousel>
+        </Container>
+        
       {politicsArticles.length > 0 && <ArticlesList articles={politicsArticles} />}
       <ScrollToTop smooth color="#000000" />
     </Fragment>

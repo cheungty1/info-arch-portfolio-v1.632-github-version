@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.carousel {
+ border-radius: 30px;
+ margin-top: 13px;
+ height: 450px
+}
+
+.carousel-caption{
+ left:0;
+ right:0;
+ background-color:rgba(0, 0, 0, 0.555);
+}
+

@@ -3,6 +3,8 @@ import Head from 'next/head';
 import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
 import ScrollToTop from "react-scroll-to-top";
+import { Carousel} from "react-bootstrap";
+import { Container } from 'react-bootstrap'
 
 function EconNewsPage(props) {
   const { econArticles } = props; 
@@ -21,6 +23,47 @@ function EconNewsPage(props) {
         description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'
         bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
+      <Container>
+      <Carousel fade >
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={econArticles[0].urlToImage ? econArticles[0].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          //src={Img1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>{econArticles[0].title}</h3>
+          <p>{econArticles[0].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={econArticles[1].urlToImage ? econArticles[1].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h3>{econArticles[1].title}</h3>
+          <p>{econArticles[1].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel d-block w-100"
+          src={econArticles[2].urlToImage ? econArticles[2].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>{econArticles[2].title}</h3>
+          <p>{econArticles[2].description}</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+        </Carousel>
+        </Container>
+
       {econArticles.length > 0 && <ArticlesList articles={econArticles} />}
       <ScrollToTop smooth color="#000000" />
     </Fragment>
