@@ -9,7 +9,7 @@ function EconNewsPage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Econ-News</title>
+        <title>iWorld - Econ-News</title>
         <meta 
           name='description'
           description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'

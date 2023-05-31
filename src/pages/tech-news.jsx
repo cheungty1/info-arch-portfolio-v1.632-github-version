@@ -9,7 +9,7 @@ function TechNewsPage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Tech-News</title>
+        <title>iWorld - Tech-News</title>
         <meta 
           name='description'
           description='Stay up to date with emerging stories in Tech today'
