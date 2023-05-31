@@ -1,9 +1,20 @@
 import ButtonLink from '@/components/common/ButtonLink';
 import { Container} from 'react-bootstrap';
 import { FiHome } from 'react-icons/fi'
+import { Fragment } from 'react';
+import Head from 'next/head';
 
 const NotFoundPage = () => {
   return (
+    <Fragment>
+    <Head>
+      <title>iWorld - 404 Not Found</title>
+      <meta 
+        name='description'
+        description='404 Not Found'
+      />
+    </Head>
+
     <div className="notFoundWrapper">
       <Container className="text-left">  
       <div className="notFound">
@@ -15,6 +26,8 @@ const NotFoundPage = () => {
          </div>  
       </Container>
     </div>
+
+    </Fragment>
   )
 }
 
