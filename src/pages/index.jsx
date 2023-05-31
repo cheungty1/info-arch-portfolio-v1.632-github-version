@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <Fragment>
       <Head>
-        <title>iWorld | Home</title>
+        <title>iWorld - Home</title>
         <meta 
           name='description'
           description='World news from around the globe, stay up to date with us in technology, economics and politics'

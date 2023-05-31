@@ -9,7 +9,7 @@ function PoliticsFeed(props) {
   return (
     <Fragment>
       <Head>
-        <title>Politics-Feed | Politics</title>
+        <title>Politics-News</title>
         <meta 
           name='description'
           description='Stay up to date with emerging stories in World GeoPolitics today'

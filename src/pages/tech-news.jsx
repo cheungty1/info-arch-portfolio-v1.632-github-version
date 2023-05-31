@@ -9,7 +9,7 @@ function TechNewsPage(props) {
   return (
     <Fragment>
       <Head>
-        <title>Tech-Feed | Tech-News</title>
+        <title>Tech-News</title>
         <meta 
           name='description'
           description='Stay up to date with emerging stories in Tech today'
