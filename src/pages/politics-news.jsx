@@ -25,7 +25,7 @@ function PoliticsFeed(props) {
         bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
       <Container>
-      <Carousel fade >
+      <Carousel fade /*className="item"*/>
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
