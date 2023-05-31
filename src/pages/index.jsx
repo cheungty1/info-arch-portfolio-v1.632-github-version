@@ -10,12 +10,12 @@ function HomePage() {
         <title>iWorld | Home</title>
         <meta 
           name='description'
-          description='Browse all the world news of today from around the globe'
+          description='World news from around the globe, stay up to date with us in technology, economics and politics'
         />
       </Head>
       <HeroSectionIndex
         title='i' 
-        description='Catch up on all world news from around the globe, at the touch of a button'
+        description='World news from around the globe, stay up to date with us in technology, economics and politics'
         
         bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.webp"
       />

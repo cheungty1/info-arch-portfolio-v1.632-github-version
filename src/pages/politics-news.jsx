@@ -12,12 +12,12 @@ function PoliticsFeed(props) {
         <title>Politics-Feed | Politics</title>
         <meta 
           name='description'
-          description='Catch up on all of the current news and developments in World GeoPolitics today'
+          description='Stay up to date with emerging stories in World GeoPolitics today'
         />
       </Head>
       <HeroSection 
         title='Politics' 
-        description='Catch up on all of the current news and developments in World GeoPolitics today'
+        description='Stay up to date with emerging stories in World GeoPolitics today'
         bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
       {politicsArticles.length > 0 && <ArticlesList articles={politicsArticles} />}

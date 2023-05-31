@@ -12,12 +12,12 @@ function TechNewsPage(props) {
         <title>Tech-Feed | Tech-News</title>
         <meta 
           name='description'
-          description='Catch up on all of the current news and developments in Tech today'
+          description='Stay up to date with emerging stories in Tech today'
         />
       </Head>
       <HeroSection 
         title='Tech' 
-        description='Catch up on all of the current news and developments in Tech today'
+        description='Stay up to date with emerging stories in Tech today'
         bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp"
       />
       {techArticles.length > 0 && <ArticlesList articles={techArticles} />}

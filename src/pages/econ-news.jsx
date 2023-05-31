@@ -12,12 +12,12 @@ function EconNewsPage(props) {
         <title>Econ-Feed | Econ</title>
         <meta 
           name='description'
-          description='Catch up on all of the current news and developments in the World Economy and Global Financial Markets today'
+          description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'
         />
       </Head>
       <HeroSection 
         title='Econ' 
-        description='Catch up on all of the current news and developments in the World Economy and Global Financial Markets today'
+        description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'
         bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
       {econArticles.length > 0 && <ArticlesList articles={econArticles} />}
