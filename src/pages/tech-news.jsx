@@ -5,6 +5,7 @@ import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList
 import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import { Container } from 'react-bootstrap'
+import Image from 'next/image';
 
 function TechNewsPage(props) {
   const { techArticles } = props; 
@@ -26,11 +27,13 @@ function TechNewsPage(props) {
       <Container>
       <Carousel fade >
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={techArticles[0].urlToImage ? techArticles[0].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           //src={Img1}
           alt="First slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{techArticles[0].title}</h3>
@@ -39,10 +42,12 @@ function TechNewsPage(props) {
       </Carousel.Item>
 
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={techArticles[1].urlToImage ? techArticles[1].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           alt="Second slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{techArticles[1].title}</h3>
@@ -51,10 +56,12 @@ function TechNewsPage(props) {
       </Carousel.Item>
 
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={techArticles[2].urlToImage ? techArticles[2].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           alt="Third slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{techArticles[2].title}</h3>

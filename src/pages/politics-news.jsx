@@ -5,7 +5,7 @@ import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList
 import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import { Container } from 'react-bootstrap'
-//import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
+import Image from 'next/image';
 
 function PoliticsFeed(props) {
   const { politicsArticles } = props; 
@@ -27,11 +27,13 @@ function PoliticsFeed(props) {
       <Container>
       <Carousel fade >
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={politicsArticles[0].urlToImage ? politicsArticles[0].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           //src={Img1}
           alt="First slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{politicsArticles[0].title}</h3>
@@ -40,10 +42,12 @@ function PoliticsFeed(props) {
       </Carousel.Item>
 
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={politicsArticles[1].urlToImage ? politicsArticles[1].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           alt="Second slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{politicsArticles[1].title}</h3>
@@ -52,10 +56,12 @@ function PoliticsFeed(props) {
       </Carousel.Item>
 
       <Carousel.Item interval={1000}>
-        <img
+      <Image 
           className="carousel d-block w-100"
           src={politicsArticles[2].urlToImage ? politicsArticles[2].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
           alt="Third slide"
+          width={650}
+          height={300}
         />
         <Carousel.Caption>
           <h3>{politicsArticles[2].title}</h3>
