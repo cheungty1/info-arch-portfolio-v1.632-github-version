@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
+import ScrollToTop from "react-scroll-to-top";
 
 function PoliticsFeed(props) {
   const { politicsArticles } = props; 
@@ -21,6 +22,7 @@ function PoliticsFeed(props) {
         bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
       {politicsArticles.length > 0 && <ArticlesList articles={politicsArticles} />}
+      <ScrollToTop smooth color="#000000" />
     </Fragment>
   );
 }

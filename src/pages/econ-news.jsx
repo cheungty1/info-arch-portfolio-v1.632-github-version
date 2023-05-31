@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
+import ScrollToTop from "react-scroll-to-top";
 
 function EconNewsPage(props) {
   const { econArticles } = props; 
@@ -21,6 +22,7 @@ function EconNewsPage(props) {
         bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
       {econArticles.length > 0 && <ArticlesList articles={econArticles} />}
+      <ScrollToTop smooth color="#000000" />
     </Fragment>
   );
 }

@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
+import ScrollToTop from "react-scroll-to-top";
 
 function TechNewsPage(props) {
   const { techArticles } = props; 
@@ -21,6 +22,7 @@ function TechNewsPage(props) {
         bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp"
       />
       {techArticles.length > 0 && <ArticlesList articles={techArticles} />}
+      <ScrollToTop smooth color="#000000" />
     </Fragment>
   );
 }
