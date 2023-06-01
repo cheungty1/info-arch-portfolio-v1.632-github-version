@@ -3,10 +3,18 @@
 .carousel {
  border-radius: 30px;
  margin-top: 13px;
- height: 450px;
+ height: 60vh;
  filter:brightness(95%);
  max-width: 90vw;
  margin: 1rem auto;
+
+ /*
+  object-fit: cover;
+  border-radius: 40px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  */
+  
 }
 
 .carousel-caption{
@@ -15,6 +23,12 @@
  background-color:rgba(0, 0, 0, 0.555);
  border-radius: 10px;
  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 675px) {
+  .carousel {
+    display: none;
+  }
 }
 /*
 .item:after {

@@ -54,6 +54,10 @@ module.exports = (phase) => {
         protocol: 'https',
         hostname: '**.media-mbst-pub-ue1.s3.amazonaws.com',
       },
+      {
+        protocol: 'https',
+        hostname: '**.media.wired.com',
+      }
     ]
   }
 

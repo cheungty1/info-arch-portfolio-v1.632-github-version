@@ -6,6 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import Container from '@/components/common/Container/Container';
 import Image from 'next/image';
+import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
 
 function EconNewsPage(props) {
   const { econArticles } = props; 
@@ -29,11 +30,11 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[0].urlToImage ? econArticles[0].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          src={econArticles[0].urlToImage ? econArticles[0].urlToImage : Img1}
           //src={Img1}
           alt="First slide"
           width={650}
-          height={300}
+          height={366}
         />
         <Carousel.Caption>
           <h3>{econArticles[0].title}</h3>
@@ -44,10 +45,10 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[1].urlToImage ? econArticles[1].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          src={econArticles[1].urlToImage ? econArticles[1].urlToImage : Img1}
           alt="Second slide"
           width={650}
-          height={300}
+          height={366}
         />
         <Carousel.Caption>
           <h3>{econArticles[1].title}</h3>
@@ -58,10 +59,10 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[2].urlToImage ? econArticles[2].urlToImage :"/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"}
+          src={econArticles[2].urlToImage ? econArticles[2].urlToImage : Img1}
           alt="Third slide"
           width={650}
-          height={300}
+          height={366}
         />
         <Carousel.Caption>
           <h3>{econArticles[2].title}</h3>
