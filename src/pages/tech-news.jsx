@@ -24,7 +24,6 @@ function TechNewsPage(props) {
         description='Stay up to date with emerging stories in Tech today'
         bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp"
       />
-      <Container>
       <Carousel fade >
       <Carousel.Item interval={1000}>
       <Image 
@@ -69,7 +68,6 @@ function TechNewsPage(props) {
         </Carousel.Caption>
       </Carousel.Item>
         </Carousel>
-        </Container>
 
       {techArticles.length > 0 && <ArticlesList articles={techArticles} />}
       <ScrollToTop smooth color="#000000" />
@@ -80,7 +78,7 @@ function TechNewsPage(props) {
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
   // External API Request: NewsAPI (BBC News)
-  const response = await fetch(`https://newsapi.org/v2/everything?q=tech&apiKey=${process.env.NEWS_API_KEY}`);
+  const response = await fetch(`https://newsapi.org/v2/everything?q=tech&pageSize=30&apiKey=${process.env.NEWS_API_KEY}`);
   const data = await response.json();
   const articles = data.articles;
 

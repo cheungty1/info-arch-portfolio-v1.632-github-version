@@ -24,7 +24,6 @@ function PoliticsFeed(props) {
         description='Stay up to date with emerging stories in World GeoPolitics today'
         bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
       />
-      <Container>
       <Carousel fade /*className="item"*/>
       <Carousel.Item interval={1000}>
       <Image 
@@ -69,7 +68,6 @@ function PoliticsFeed(props) {
         </Carousel.Caption>
       </Carousel.Item>
         </Carousel>
-        </Container>
         
       {politicsArticles.length > 0 && <ArticlesList articles={politicsArticles} />}
       <ScrollToTop smooth color="#000000" />
@@ -80,7 +78,7 @@ function PoliticsFeed(props) {
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
   // External API Request: NewsAPI (BBC News)
-  const response = await fetch(`https://newsapi.org/v2/everything?q=politics&apiKey=${process.env.NEWS_API_KEY}`);
+  const response = await fetch(`https://newsapi.org/v2/everything?q=politics&pageSize=30&apiKey=${process.env.NEWS_API_KEY}`);
   const data = await response.json();
   const articles = data.articles;
 

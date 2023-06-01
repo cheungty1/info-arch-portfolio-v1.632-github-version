@@ -4,7 +4,7 @@ import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
 import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
-import { Container } from 'react-bootstrap'
+import Container from '@/components/common/Container/Container';
 import Image from 'next/image';
 
 function EconNewsPage(props) {
@@ -24,7 +24,7 @@ function EconNewsPage(props) {
         description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'
         bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
-      <Container>
+   
       <Carousel fade >
       <Carousel.Item interval={1000}>
       <Image 
@@ -69,7 +69,7 @@ function EconNewsPage(props) {
         </Carousel.Caption>
       </Carousel.Item>
         </Carousel>
-        </Container>
+        
 
       {econArticles.length > 0 && <ArticlesList articles={econArticles} />}
       <ScrollToTop smooth color="#000000" />
@@ -80,7 +80,7 @@ function EconNewsPage(props) {
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
   // External API Request: NewsAPI (BBC News)
-  const response = await fetch(`https://newsapi.org/v2/everything?q=economy&apiKey=${process.env.NEWS_API_KEY}`);
+  const response = await fetch(`https://newsapi.org/v2/everything?q=economy&pageSize=30&apiKey=${process.env.NEWS_API_KEY}`);
   const data = await response.json();
   const articles = data.articles;
 
