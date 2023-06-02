@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import { Container } from 'react-bootstrap'
 import Image from 'next/image';
-import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
+import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg"
 
 function PoliticsFeed(props) {
   const { politicsArticles } = props; 
@@ -23,7 +23,7 @@ function PoliticsFeed(props) {
       <HeroSection 
         title='Politics' 
         description='Stay up to date with emerging stories in World GeoPolitics today'
-        bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.webp"
+        bgImage="/backgrounds/christian-lue-C241mbgtgys-unsplash.jpg"
       />
       <Carousel fade /*className="item"*/>
       <Carousel.Item interval={1000}>
