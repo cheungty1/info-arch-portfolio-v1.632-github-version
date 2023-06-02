@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import { Container } from 'react-bootstrap'
 import Image from 'next/image';
-import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg"
+import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
 
 function TechNewsPage(props) {
   const { techArticles } = props; 
@@ -23,7 +23,7 @@ function TechNewsPage(props) {
       <HeroSection 
         title='Tech' 
         description='Stay up to date with emerging stories in Tech today'
-        bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.jpg"
+        bgImage="/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp"
       />
       <Carousel fade >
       <Carousel.Item interval={1000}>

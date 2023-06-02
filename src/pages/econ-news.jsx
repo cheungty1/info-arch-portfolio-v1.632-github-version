@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
 import Container from '@/components/common/Container/Container';
 import Image from 'next/image';
-import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg"
+import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
 
 function EconNewsPage(props) {
   const { econArticles } = props; 
@@ -23,7 +23,7 @@ function EconNewsPage(props) {
       <HeroSection 
         title='Econ' 
         description='Stay up to date with emerging stories in the World Economy and Global Financial Markets today'
-        bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.jpg"
+        bgImage="/backgrounds/nick-chong-N__BnvQ_w18-unsplash.webp"
       />
    
       <Carousel fade >

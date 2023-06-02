@@ -17,7 +17,7 @@ function HomePage() {
         title='i' 
         description='World news from around the globe, stay up to date with us in technology, economics and politics'
         
-        bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.jpg"
+        bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.webp"
       />
       {/*}
                 <Card border="dark" style={{ width: "18rem" }}>
