@@ -1,7 +1,7 @@
-@use '@/styles/scss/abstracts/' as *;
+@use "@/styles/scss/abstracts/" as *;
 
 .showcase {
-  background: no-repeat center/cover;  
+  background: no-repeat center/cover;
   // bg-image is passed in as dynamic prop in Hero.jsx
   height: 100vh;
   color: $complementaryColor;
@@ -19,34 +19,99 @@
       justify-content: center;
       margin: auto;
 
-    h1 {
-      font-size: 2em;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      
-      span {
-        font-weight: 700;
-        margin-left: 9rem
+      h1 {
+        font-size: 2em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        span {
+          font-weight: 700;
+          margin-left: 9rem;
+        }
+      }
+      p {
+        margin-left: 9rem;
       }
     }
-    p {
-      margin-left: 9rem
-    }
-  }
   }
 }
 
 .showcase1 {
-  color:black;
+  color: black;
   margin: auto;
   text-align: left;
 
-em {
-    &:hover {  
+  em {
+    &:hover {
       color: $brandColor;
     }
   }
-
 }
 
+/*
+@media only screen and (max-width: 675px) {
+  .showcase {
+    .overlay {
+      display: grid;
+      grid-template-columns: none;
+      align-items: center;
+      .overlay2 {
+        h1 {
+          display: block;
+
+          span {
+            font-weight: 700;
+            margin: auto;
+          }
+        }
+      }
+      p {
+        display: grid;
+        margin: auto;
+      }
+
+    }
+  }
+.showcase1 {
+  display: none;
+}
+}
+*/
+@media only screen and (max-width: 675px) {
+.showcase {
+  background: no-repeat center/cover;
+  // bg-image is passed in as dynamic prop in Hero.jsx
+  height: 100vh;
+  color: $complementaryColor;
+
+  .overlay {
+    display: grid;
+    grid-template-columns: none;
+    align-items: center;
+
+    .overlay2 {
+      justify-content: center;
+      margin: auto;
+
+      h1 {
+        display: block;
+        padding-left:10px;
+        padding-right:10px;
+        span {
+          font-weight: 700;
+          margin: auto;
+        }
+      }
+      p {
+        margin: auto;
+        padding-left:10px;
+        padding-right:10px;
+      }
+    }
+  }
+}
+.showcase1 {
+  display: none;
+}
+}

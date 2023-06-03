@@ -4,12 +4,22 @@ import HeroSection from '@/components/layout/HeroSection/HeroSection';
 import ArticlesList from '@/components/feature/articles/ArticlesList/ArticleList';
 import ScrollToTop from "react-scroll-to-top";
 import { Carousel} from "react-bootstrap";
-import Container from '@/components/common/Container/Container';
 import Image from 'next/image';
-import Img1 from "../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp"
 
 function EconNewsPage(props) {
   const { econArticles } = props; 
+
+  const Img1= {
+    backgroundImage: `url("${econArticles[0].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}")`
+  }
+
+  const Img2= {
+    backgroundImage: `url("${econArticles[1].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}")`
+  }
+
+  const Img3= {
+    backgroundImage: `url("${econArticles[2].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}")`
+  }
 
   return (
     <Fragment>
@@ -30,8 +40,7 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[0].urlToImage ? econArticles[0].urlToImage : Img1}
-          //src={Img1}
+          style={Img1}
           alt="First slide"
           width={650}
           height={366}
@@ -45,7 +54,7 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[1].urlToImage ? econArticles[1].urlToImage : Img1}
+          style={Img2}
           alt="Second slide"
           width={650}
           height={366}
@@ -59,7 +68,7 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          src={econArticles[2].urlToImage ? econArticles[2].urlToImage : Img1}
+          style={Img3}
           alt="Third slide"
           width={650}
           height={366}

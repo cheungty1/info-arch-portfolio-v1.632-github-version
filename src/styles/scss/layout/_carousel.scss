@@ -2,18 +2,28 @@
 
 .carousel {
  border-radius: 30px;
- margin-top: 13px;
- height: 60vh;
+ //margin-top: 13px;
+ //height: 60vh;
  filter:brightness(95%);
  max-width: 90vw;
- margin: 1rem auto;
-
+ //margin: 0rem auto;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
  /*
   object-fit: cover;
   border-radius: 40px;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
   */
+  margin: auto;
+  height: 53vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat
+
+  //.Img2 {
+    //background-image:url("/backgrounds/mathew-schwartz-iGheu30xAi8-unsplash.webp")
+  //}
   
 }
 
