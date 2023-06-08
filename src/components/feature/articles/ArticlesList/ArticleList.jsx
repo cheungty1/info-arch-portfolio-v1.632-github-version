@@ -10,7 +10,7 @@ function ArticlesList(props) {
         <ArticleItem
           key={article.title}
           id={article.title}
-          urlToImage={article.urlToImage} // this is fine not commented
+          urlToImage={article.urlToImage}
           url={article.url}
           title={article.title}
           description={article.description}

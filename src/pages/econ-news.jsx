@@ -40,10 +40,9 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          style={Img1}
+          src={econArticles[0].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="First slide"
-          width={650}
-          height={366}
+          fill={true}
         />
         <Carousel.Caption>
           <h3>{econArticles[0].title}</h3>
@@ -54,10 +53,9 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          style={Img2}
+          src={econArticles[1].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="Second slide"
-          width={650}
-          height={366}
+          fill={true}
         />
         <Carousel.Caption>
           <h3>{econArticles[1].title}</h3>
@@ -68,10 +66,9 @@ function EconNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          style={Img3}
+          src={econArticles[2].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="Third slide"
-          width={650}
-          height={366}
+          fill={true}
         />
         <Carousel.Caption>
           <h3>{econArticles[2].title}</h3>
@@ -89,7 +86,7 @@ function EconNewsPage(props) {
 
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
-  // External API Request: NewsAPI (BBC News)
+  // External API Request: NewsAPI (Econ News)
   const response = await fetch(`https://newsapi.org/v2/everything?q=economy&pageSize=30&apiKey=${process.env.NEWS_API_KEY}`);
   const data = await response.json();
   const articles = data.articles;

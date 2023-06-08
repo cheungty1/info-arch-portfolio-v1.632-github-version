@@ -39,10 +39,9 @@ function TechNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image
           className="carousel d-block w-100"
-          style={Img1}
+          src={techArticles[0].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="First slide"
-          width={650}
-         height={366}
+          fill={true}
         />
       
         <Carousel.Caption>
@@ -54,10 +53,9 @@ function TechNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          style={Img2}
+          src={techArticles[1].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="Second slide"
-          width={650}
-         height={366}
+          fill={true}
         />
         <Carousel.Caption>
           <h3>{techArticles[1].title}</h3>
@@ -68,10 +66,9 @@ function TechNewsPage(props) {
       <Carousel.Item interval={1000}>
       <Image 
           className="carousel d-block w-100"
-          style={Img3}
+          src={techArticles[2].urlToImage || '/backgrounds/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.webp'}
           alt="Third slide"
-          width={650}
-         height={366}
+          fill={true}
         />
         <Carousel.Caption>
           <h3>{techArticles[2].title}</h3>
@@ -88,7 +85,7 @@ function TechNewsPage(props) {
 
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
-  // External API Request: NewsAPI (BBC News)
+  // External API Request: NewsAPI (tech news)
   const response = await fetch(`https://newsapi.org/v2/everything?q=tech&pageSize=30&apiKey=${process.env.NEWS_API_KEY}`);
   const data = await response.json();
   const articles = data.articles;

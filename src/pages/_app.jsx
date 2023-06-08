@@ -4,17 +4,6 @@ import Head from 'next/head';
 import Script from 'next/script'
 import Layout from '@/components/layout';
 
-/*<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELKCZSSFF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ELKCZSSFF0');
-</script>
-*/
-
 function App({ Component, pageProps }) {
   return (
     <Fragment>

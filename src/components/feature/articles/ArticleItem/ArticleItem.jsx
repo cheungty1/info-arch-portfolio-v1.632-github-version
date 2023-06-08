@@ -7,13 +7,13 @@ import Img1 from "../../../../../public/backgrounds/towfiqu-barbhuiya-5xTYgw2g7a
 function ArticleItem(props) {
   return (
     <Card size="grid">
+
       {/* CARD MAIN */}
       <div className={styles.articleMain}>
         {<div className={styles.imageBox}>
            <Image 
            className={styles.nextImage}
-           //src={props.urlToImage}
-            src={props.urlToImage ? props.urlToImage : Img1} 
+            src={props.urlToImage || Img1} 
             alt={props.title} 
             fill={true}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -24,6 +24,7 @@ function ArticleItem(props) {
           <p>{props.description}</p>
         </div>
       </div>
+      
       {/* CARD FOOTER */}
       <div className={styles.articleFooter}>
         <ButtonLink path={props.url} target="_blank">

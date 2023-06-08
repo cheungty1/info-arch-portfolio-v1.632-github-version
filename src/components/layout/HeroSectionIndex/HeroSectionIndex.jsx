@@ -1,5 +1,5 @@
 import styles from "./HeroSectionIndex.module.scss";
-import { Container, Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Fragment } from "react";
 import Link from "next/link";

@@ -1,4 +1,7 @@
-export const articles = [
+ // Alex's NextJS Custom API - data
+ 
+ /*export const articles = [
+ 
   {
     id: 1,
     title: "Node.js 18 updates OpenSSL support, enables fetch API",
@@ -41,4 +44,4 @@ export const articles = [
     category: "Industry",
     image: "/articles/market-bust.webp",
   }
-]
+]*/
