@@ -1,9 +1,12 @@
+// Import Components
 import '@/styles/scss/main.scss'
 import { Fragment } from 'react';
 import Head from 'next/head';
 import Script from 'next/script'
 import Layout from '@/components/layout';
 
+// Function for App - Contains Google Analytics Tags, Wrap Component in Layout
+// More info on Nextjs - Custom App = https://nextjs.org/docs/pages/building-your-application/routing/custom-app
 function App({ Component, pageProps }) {
   return (
     <Fragment>

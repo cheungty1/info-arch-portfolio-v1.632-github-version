@@ -1,5 +1,6 @@
 @use "@/styles/scss/abstracts/" as *;
 
+// Style HeroSectionIndex
 .showcase {
   background: no-repeat center/cover;
   height: 100vh;
@@ -47,70 +48,43 @@
     }
   }
 }
-
-/*
+// Media Query - change css styling for Hero Section Text for Mobile (viewport < 675px)
 @media only screen and (max-width: 675px) {
   .showcase {
+    // bg-image is passed in as dynamic prop in Hero.jsx
+    background: no-repeat center/cover;
+    height: 100vh;
+    color: $complementaryColor;
+
     .overlay {
       display: grid;
       grid-template-columns: none;
       align-items: center;
+
       .overlay2 {
+        justify-content: center;
+        margin: auto;
+
         h1 {
           display: block;
+          padding-left: 10px;
+          padding-right: 10px;
 
           span {
             font-weight: 700;
             margin: auto;
           }
         }
-      }
-      p {
-        display: grid;
-        margin: auto;
-      }
-
-    }
-  }
-.showcase1 {
-  display: none;
-}
-}
-*/
-@media only screen and (max-width: 675px) {
-.showcase {
-  background: no-repeat center/cover;
-  // bg-image is passed in as dynamic prop in Hero.jsx
-  height: 100vh;
-  color: $complementaryColor;
-
-  .overlay {
-    display: grid;
-    grid-template-columns: none;
-    align-items: center;
-
-    .overlay2 {
-      justify-content: center;
-      margin: auto;
-
-      h1 {
-        display: block;
-        padding-left:10px;
-        padding-right:10px;
-        span {
-          font-weight: 700;
+        p {
           margin: auto;
+          padding-left: 10px;
+          padding-right: 10px;
         }
       }
-      p {
-        margin: auto;
-        padding-left:10px;
-        padding-right:10px;
-      }
     }
   }
-}
-.showcase1 {
-  display: none;
-}
+  // Media Query - remove Card for Mobile (viewport < 675px)
+  .showcase1 {
+    display: none;
+  }
 }

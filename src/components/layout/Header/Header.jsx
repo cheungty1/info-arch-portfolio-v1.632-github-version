@@ -1,7 +1,9 @@
+// Import Components from Next Link and React Bootstrap
+/*import styles from './Header.module.scss';*/
 import Link from 'next/link';
-//import styles from './Header.module.scss';
 import { Container, Nav, Navbar } from "react-bootstrap";
 
+// Function for Header - Incorporate React Bootstrap Navbar for responsiveness and Next Link
 function Header() {
   return (
       <Navbar expand="lg" variant="dark">

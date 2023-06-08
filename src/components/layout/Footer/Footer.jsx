@@ -1,5 +1,7 @@
+// Import Scss module
 import styles from './Footer.module.scss'
 
+// Function for footer
 function Footer() {
   const getCurrentYear = () => {
     return new Date().getFullYear();

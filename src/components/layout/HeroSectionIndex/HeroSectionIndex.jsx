@@ -1,11 +1,13 @@
+// Import Scss modules, Next Link and React Bootstrap
 import styles from "./HeroSectionIndex.module.scss";
 import { Card } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Fragment } from "react";
 import Link from "next/link";
 
+// Function for HeroSectionIndex - Hero Section of Index Page
 function HeroSectionIndex({ title, description, bgImage }) {
-  // SEE on STATIC ASSETS: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
+  // STATIC ASSETS - NextJS documentation: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
 
   return (
     <Fragment>
@@ -23,6 +25,7 @@ function HeroSectionIndex({ title, description, bgImage }) {
       
           </div>
           <div className={styles.showcase1}>
+            {/* Bootstrap CARD - with no images */}
             <Card style={{ width: "8rem" }}>
               <Card.Header><b>FEATURED</b></Card.Header>
               <ListGroup variant="flush">

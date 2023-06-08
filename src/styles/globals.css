@@ -1,3 +1,7 @@
+/* More Info on globals.css - https://nextjs.org/learn/basics/assets-metadata-css/global-styles*/
+/* More Info on globals.css - https://nextjs.org/docs/pages/building-your-application/styling#adding-a-global-stylesheet*/
+/* Global Css - Basic base styling */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
 html, body {
   padding: 0;

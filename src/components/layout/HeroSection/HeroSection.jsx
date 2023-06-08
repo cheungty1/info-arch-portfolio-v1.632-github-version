@@ -1,8 +1,9 @@
+// Import scss modules
 import styles from './HeroSection.module.scss';
 
-
+// Function for HeroSection 
 function HeroSection({ title, description, bgImage }) {
-  // SEE on STATIC ASSETS: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
+  // STATIC ASSETS - NextJS documentation: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
 
   return (
     <div 

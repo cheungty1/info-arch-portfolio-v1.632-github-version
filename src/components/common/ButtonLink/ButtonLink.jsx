@@ -1,6 +1,8 @@
+// Import from scss module and next link
 import styles from './ButtonLink.module.scss';
 import Link from 'next/link';
 
+// Function for button with next link function
 function ButtonLink({ path, target, children }) {
   return (
     <Link 

@@ -1,7 +1,10 @@
+// Import Components
 import { Fragment } from 'react';
 import Head from 'next/head';
 import HeroSectionIndex from '@/components/layout/HeroSectionIndex/HeroSectionIndex';
 
+// Function for Home Page - Index Page
+// Text and Card located in HeroSectionIndex Component
 function HomePage() {
   return (
     <Fragment>
@@ -15,10 +18,8 @@ function HomePage() {
       <HeroSectionIndex
         title='i' 
         description='World news from around the globe, stay up to date with us in technology, economics and politics'
-        
         bgImage="/backgrounds/actionvance-EffbIFpOHU4-unsplash.webp"
       />
-     
     </Fragment>
   )
 }

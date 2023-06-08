@@ -1,5 +1,7 @@
+// Import from scss module
 import styles from './Button.module.scss';
 
+// Button Function
 function Button({ onClick, children }) {
   return (
     <button 
